@@ -35,4 +35,20 @@ export class UserService {
   getAll(): IUser[] {
     return this.users;
   }
+
+  add(user: IUser): void {
+    this.users.push(user);
+  }
+
+  getIndexUser(id: number): any {
+    return this.users.findIndex(user => (user.id === id));
+  }
+
+  edit(user, id): any {
+    this.users.splice(this.getIndexUser(id), 1, user);
+  }
+
+  delete(id): void {
+    this.users.splice(this.getIndexUser(id), 1);
+  }
 }

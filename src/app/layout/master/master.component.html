@@ -20,7 +20,7 @@
           <img src="assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">{{userLogin.username}}</a>
+          <a href="#" (click)="logout()" class="d-block">{{userLogin.username}}</a>
         </div>
       </div>
 
@@ -45,13 +45,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" (click)="logout()" class="nav-link">
+                <a href="" [routerLink]="['users/add']" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Logout</p>
+                  <p>Add-user</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href=""  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>

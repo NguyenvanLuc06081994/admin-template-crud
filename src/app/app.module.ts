@@ -16,8 +16,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     LoginComponent,
     MasterComponent,
     NavbarComponent,
-    DashBoardComponent,
-    UserListComponent
+    DashBoardComponent
   ],
     imports: [
         BrowserModule,
